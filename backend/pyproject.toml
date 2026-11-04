@@ -1,0 +1,19 @@
+[project]
+name = "trivia-localisation-desk"
+version = "0.1.0"
+description = "Backend API for the Trivia Localisation Desk"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "httpx>=0.27",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
